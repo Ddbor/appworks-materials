@@ -1,7 +1,7 @@
 {
   "name": "@ddbor/ice-scaffold",
-  "version": "0.1.0",
-  "description": "基于飞冰(ICE)开发的用于AppWorks插件的脚手架物料",
+  "version": "0.2.0",
+  "description": "基于飞冰(ICE)的脚手架",
   "files": [
     ".ice/",
     "build/",
@@ -17,6 +17,7 @@
     "screenshot.png",
     "tsconfig.json"
   ],
+  "homepage": "https://github.com/Ddbor/appworks-materials/tree/main/scaffolds/DdborIceScffold",
   "scripts": {
     "start": "ice start",
     "build": "ice build",

@@ -13,19 +13,19 @@ $ npm start
 ```md
 .
 ├── README.md
-├── ice.config.mts                  # The project config
+├── ice.config.mts # The project config
 ├── package.json
-├── .browserslistrc                 # Browsers that we support
+├── .browserslistrc # Browsers that we support
 ├── public
-│   ├── favicon.ico   
+│   ├── favicon.ico  
 ├── src
-│   ├── app.ts                      # The app entry
+│   ├── app.ts # The app entry
 │   ├── assets
 │   │   └── logo.png
 │   ├── document.tsx
-│   ├── pages                       # Pages directory
+│   ├── pages # Pages directory
 │   │   ├── index.module.css
-│   │   └── index.tsx               # Index page entry
+│   │   └── index.tsx # Index page entry
 │   └── typings.d.ts
 └── tsconfig.json
 ```

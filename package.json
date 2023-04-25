@@ -1,6 +1,6 @@
 {
   "name": "@ddbor/appworks-materials",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "这是一个AppWorks自定义物料项目",
   "author": "ddbor",
   "scripts": {
@@ -15,6 +15,7 @@
   "files": [
     "build"
   ],
+  "homepage": "https://github.com/Ddbor/appworks-materials",
   "devDependencies": {
     "@ice/screenshot": "^0.1.1",
     "@iceworks/spec": "^1.0.0",
