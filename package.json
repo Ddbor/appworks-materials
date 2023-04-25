@@ -1,7 +1,7 @@
 {
   "name": "@ddbor/appworks-materials",
   "version": "0.1.0",
-  "description": "这是一个Appworks物料项目",
+  "description": "这是一个AppWorks自定义物料项目",
   "author": "ddbor",
   "scripts": {
     "deploy": "npm run generate && npm run sync",
@@ -24,5 +24,14 @@
   "materialConfig": {
     "template": "@icedesign/ice-react-ts-material-template",
     "type": "react"
-  }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Ddbor/appworks-materials.git"
+  },
+  "license": "MIT"
 }

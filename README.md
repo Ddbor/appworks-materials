@@ -51,3 +51,7 @@ $ appworks sync
 ## Use materials in AppWorks
 
 Add the materials data url to [AppWorks](https://appworks.site/pack/basic/materials.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%89%A9%E6%96%99%E6%BA%90).
+
+## 物料源地址
+
+`https://unpkg.com/@ddbor/appworks-materials@latest/build/materials.json`

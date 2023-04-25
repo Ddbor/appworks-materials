@@ -54,5 +54,6 @@
   "scaffoldConfig": {
     "name": "@ddbor/ice-scaffold",
     "title": "基于飞冰的研发框架"
-  }
+  },
+  "license": "MIT"
 }
