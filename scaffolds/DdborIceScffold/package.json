@@ -1,0 +1,58 @@
+{
+  "name": "@ddbor/ice-scaffold",
+  "version": "0.1.0",
+  "description": "基于飞冰(ICE)开发的用于AppWorks插件的脚手架物料",
+  "files": [
+    ".ice/",
+    "build/",
+    "public/",
+    "src/",
+    "_browserslistrc",
+    "_eslintignore",
+    "_eslintrc.cjs",
+    "_gitignore",
+    "_stylelintignore",
+    "_stylelintrc.cjs",
+    "ice.config.mts",
+    "screenshot.png",
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "start": "ice start",
+    "build": "ice build",
+    "screenshot": "../../node_modules/.bin/screenshot -l",
+    "eslint": "eslint ./src --cache --ext .js,.jsx,.ts,.tsx",
+    "eslint:fix": "npm run eslint -- --fix",
+    "stylelint": "stylelint \"**/*.{css,scss,less}\" --cache",
+    "prepublishOnly": "npm run build && npm run screenshot",
+    "stylelint:fix": "npm run stylelint -- --fix",
+    "lint": "npm run eslint && npm run stylelint"
+  },
+  "dependencies": {
+    "@ice/runtime": "^1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@applint/spec": "^1.2.3",
+    "@ice/app": "^3.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/node": "^18.11.17",
+    "eslint": "^8.35.0",
+    "stylelint": "^15.2.0",
+    "typescript": "^4.9.5"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Ddbor/appworks-materials.git"
+  },
+  "scaffoldConfig": {
+    "name": "@ddbor/ice-scaffold",
+    "title": "基于飞冰的研发框架"
+  }
+}
