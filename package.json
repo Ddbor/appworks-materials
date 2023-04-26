@@ -1,16 +1,16 @@
 {
   "name": "@ddbor/appworks-materials",
-  "version": "0.3.0",
+  "version": "0.6.0",
   "description": "这是一个AppWorks自定义物料项目",
   "author": "ddbor",
   "scripts": {
     "deploy": "npm run generate && npm run sync",
-    "generate": "appworks generate",
+    "g": "appworks generate",
     "sync": "appworks sync",
     "lint": "npm run eslint && npm run stylelint",
     "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",
     "stylelint": "stylelint \"**/*.{css,scss,less}\"",
-    "prepublishOnly": "npm run generate"
+    "prepublishOnly": "npm run g"
   },
   "files": [
     "build"

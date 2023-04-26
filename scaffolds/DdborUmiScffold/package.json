@@ -1,0 +1,58 @@
+{
+  "name": "@ddbor/umi-scaffold",
+  "version": "0.2.0",
+  "description": "整理后的 Umi Max 框架",
+  "homepage": "https://github.com/Ddbor/appworks-materials/tree/main/scaffolds/DdborUmiScffold",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Ddbor/appworks-materials.git"
+  },
+  "license": "MIT",
+  "files": [
+    "mock/",
+    "src/",
+    ".eslintrc.js",
+    "_gitignore",
+    ".lintstagedrc",
+    ".npmrc",
+    ".prettierignore",
+    ".prettierrc",
+    ".stylelintrc.js",
+    ".umirc.ts",
+    "tsconfig.json",
+    "typings.d.ts"
+  ],
+  "scripts": {
+    "build": "max build",
+    "dev": "max dev",
+    "format": "prettier --cache --write .",
+    "postinstall": "max setup",
+    "prepare": "husky install",
+    "setup": "max setup",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.0.1",
+    "@ant-design/pro-components": "^2.4.8",
+    "@umijs/max": "^4.0.66",
+    "antd": "^5.4.6"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
+    "prettier": "^2.8.8",
+    "prettier-plugin-organize-imports": "^3.2.2",
+    "prettier-plugin-packagejson": "^2.4.3",
+    "typescript": "^5.0.4"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scaffoldConfig": {
+    "name": "@ddbor/umi-scaffold",
+    "title": "Umi前端研发框架"
+  }
+}

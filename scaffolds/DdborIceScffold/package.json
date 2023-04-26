@@ -1,6 +1,6 @@
 {
   "name": "@ddbor/ice-scaffold",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "基于飞冰v3(ICE)的脚手架",
   "files": [
     ".ice/",

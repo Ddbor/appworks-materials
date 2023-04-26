@@ -10,9 +10,13 @@ coverage/
 .eslintcache
 .vscode/
 .tmp/
+pnpm-lock.yaml
 
 build
 blocks/**/lib/
 components/**/lib/
 components/**/es/
 screenshot.png
+.husky
+dist
+_git
