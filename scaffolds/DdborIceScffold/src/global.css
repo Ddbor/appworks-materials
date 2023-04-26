@@ -5,4 +5,13 @@
 
 body {
   margin: 0;
+
+  /* 覆盖局部基础组件样式: 覆盖 next 组件的样式例子 */
+  /*
+  
+  .next-btn {
+    font-size: 18px;
+  }
+  
+  */
 }

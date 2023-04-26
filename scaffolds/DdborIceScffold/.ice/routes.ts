@@ -1,11 +1,11 @@
 export default [
   {
-    path: '',
+    path: '/',
     load: () => import(/* webpackChunkName: "p_index" */ '@/pages/index'),
     componentName: 'index',
     index: true,
     id: 'index',
     exact: true,
-    exports: ["default"],
+    exports: ["default","pageConfig"],
   },
 ];

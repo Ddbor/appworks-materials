@@ -4,7 +4,7 @@ import { runClientApp, getAppConfig } from '@ice/runtime';
 import { commons, statics } from './runtimeModules';
 import * as app from '@/app';
 import routes from './routes';
-
+import appStore from '@/store';
 const getRouterBasename = () => {
   const appConfig = getAppConfig(app);
   return appConfig?.router?.basename ?? "/" ?? '';
@@ -25,6 +25,10 @@ const render = (customOptions = {}) => {
     hydrate: true,
     memoryRouter: false,
         ...customOptions,
+        runtimeOptions: {
+      appStore,
+      ...(customOptions.runtimeOptions || {}),
+    },
       };
   return runClientApp(appProps);
 };

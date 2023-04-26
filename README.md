@@ -2,20 +2,20 @@
 
 [Docs](https://appworks.site/materials/about.html).
 
-## Install appworks CLI
+## 安装 appworks CLI
 
 ```bash
 $ npm i -g appworks
 $ appworks --help
 ```
 
-## Install Deps
+## 安装依赖
 
 ```bash
 $ npm install
 ```
 
-## Develop materials
+## 物料开发
 
 ```bash
 # block
@@ -29,26 +29,26 @@ $ npm install
 $ npm run start
 ```
 
-## Add new material
+## 添加新物料
 
 ```bash
 $ appworks add  # select block|component|scaffold
 ```
 
-## Generate materials data
+## 生成物料数据
 
 ```bash
 $ appworks generate
 ```
 
-## Publish materials data
+## 发布物料
 
 ```bash
-# sync to fusion material center
+# 同步到物料中心
 $ appworks sync
 ```
 
-## Use materials in AppWorks
+## 在 AppWorks 中使用物料
 
 Add the materials data url to [AppWorks](https://appworks.site/pack/basic/materials.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%89%A9%E6%96%99%E6%BA%90).
 

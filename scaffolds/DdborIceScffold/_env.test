@@ -1,0 +1,5 @@
+# 测试环境变量 https://v3.ice.work/docs/guide/basic/env
+
+# 用于 ice.js 的运行模式
+
+ICE_CORE_MODE=test

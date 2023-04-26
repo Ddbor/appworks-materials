@@ -1,16 +1,23 @@
 {
   "name": "@ddbor/ice-scaffold",
-  "version": "0.2.0",
-  "description": "基于飞冰(ICE)的脚手架",
+  "version": "0.3.0",
+  "description": "基于飞冰v3(ICE)的脚手架",
   "files": [
     ".ice/",
     "build/",
     "public/",
+    "mock/",
     "src/",
     "_browserslistrc",
+    "_env",
+    "_env.development",
+    "_env.production",
+    "_env.test",
     "_eslintignore",
     "_eslintrc.cjs",
     "_gitignore",
+    "_prettierignore",
+    "_prettierrc.js",
     "_stylelintignore",
     "_stylelintrc.cjs",
     "ice.config.mts",
@@ -20,7 +27,8 @@
   "homepage": "https://github.com/Ddbor/appworks-materials/tree/main/scaffolds/DdborIceScffold",
   "scripts": {
     "start": "ice start",
-    "build": "ice build",
+    "build:test": "ice build --mode=test",
+    "build": "ice build --mode=production",
     "screenshot": "../../node_modules/.bin/screenshot -l",
     "eslint": "eslint ./src --cache --ext .js,.jsx,.ts,.tsx",
     "eslint:fix": "npm run eslint -- --fix",
@@ -30,16 +38,17 @@
     "lint": "npm run eslint && npm run stylelint"
   },
   "dependencies": {
-    "@ice/runtime": "^1.0.0",
+    "@ice/runtime": "^1.1.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@applint/spec": "^1.2.3",
-    "@ice/app": "^3.0.0",
+    "@ice/app": "^3.1.6",
+    "@ice/plugin-store": "^1.0.3",
+    "@types/node": "^18.11.17",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
-    "@types/node": "^18.11.17",
     "eslint": "^8.35.0",
     "stylelint": "^15.2.0",
     "typescript": "^4.9.5"

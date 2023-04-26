@@ -13,13 +13,12 @@
     "noImplicitAny": false,
     "importHelpers": true,
     "strictNullChecks": true,
-    "suppressImplicitAnyIndexErrors": true,
     "skipLibCheck": true,
     "paths": {
       "@/*": ["./src/*"],
       "ice": [".ice"]
     }
   },
-  "include": ["src", ".ice"],
+  "include": ["src", ".ice", "src/store.ts", "src/models", "src/pages/models", "src/pages/store.ts"],
   "exclude": ["build"]
 }

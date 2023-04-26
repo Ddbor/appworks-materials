@@ -1,33 +1,73 @@
 # ice.js 3 Lite Scaffold
 
-## Usage
+## 包管理工具
+
+- [pnpm](https://pnpm.js.org/zh/)（推荐）
+- [yarn](https://yarnpkg.com/)
+- [npm](https://www.npmjs.com/)
+- [cnpm](https://www.npmjs.com/package/cnpm)
+
+## 使用
 
 ```bash
-$ npm install
+$ pnpm install
 
-$ npm start
+$ pnpm start
 ```
 
-## Directories
+## 目录结构
 
 ```md
 .
 ├── README.md
-├── ice.config.mts # The project config
+├── ice.config.mts # 构建配置
 ├── package.json
-├── .browserslistrc # Browsers that we support
+├── .browserslistrc # 支持的浏览器
 ├── public
 │   ├── favicon.ico  
 ├── src
-│   ├── app.ts # The app entry
+│   ├── models # 全局状态
+│   │   └── user.ts
+│   ├── app.ts # 应用入口
 │   ├── assets
 │   │   └── logo.png
 │   ├── document.tsx
-│   ├── pages # Pages directory
+│   ├── pages # 页面文件夹
 │   │   ├── index.module.css
-│   │   └── index.tsx # Index page entry
+│   │   └── index.tsx # 页面入口
 │   └── typings.d.ts
+│   └── global.css # 全局样式
 └── tsconfig.json
 ```
 
-For more detail, please visit [docs](https://v3.ice.work/).
+## 构建
+
+```bash
+# 测试环境构建
+$ pnpm build:test
+
+# 生产环境构建
+$ pnpm build
+```
+
+## 详细文档
+
+更多详细文档内容请查看： [ice docs](https://v3.ice.work/)
+
+## 小程序
+
+ice.js 支持小程序开发，需手动接入
+
+详情请查看：[ice 小程序](https://v3.ice.work/docs/guide/miniapp/start)
+
+## 微前端
+
+ice.js 支持微前端开发，需手动接入
+
+详情请查看：[ice 微前端](https://v3.ice.work/docs/guide/advanced/icestark)
+
+## 状态管理
+
+ice.js 支持状态管理，已接入[icestore v2](https://github.com/ice-lab/icestore#%E6%96%87%E6%A1%A3)
+
+详情请查看：[ice 状态管理](https://v3.ice.work/docs/guide/advanced/store)
