@@ -65,9 +65,3 @@ ice.js 支持小程序开发，需手动接入
 ice.js 支持微前端开发，需手动接入
 
 详情请查看：[ice 微前端](https://v3.ice.work/docs/guide/advanced/icestark)
-
-## 状态管理
-
-ice.js 支持状态管理，已接入[icestore v2](https://github.com/ice-lab/icestore#%E6%96%87%E6%A1%A3)
-
-详情请查看：[ice 状态管理](https://v3.ice.work/docs/guide/advanced/store)

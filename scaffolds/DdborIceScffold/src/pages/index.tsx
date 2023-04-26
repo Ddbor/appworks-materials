@@ -13,7 +13,7 @@ export const pageConfig = definePageConfig(() => ({
 // 对应路由组件在页面中需要渲染的内容
 export default function Home() {
   const [count, setCount] = useState(1);
-  const updateCount = () => setCount((c) => c + 1);
+  const updateCount = () => setCount((sum) => sum + 1);
 
   return (
     <div className={styles.app}>
@@ -47,7 +47,6 @@ export default function Home() {
           </a>
         </p>
       </main>
-
     </div>
   );
 }

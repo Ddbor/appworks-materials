@@ -4,7 +4,6 @@ import { Link, Outlet, useParams, useSearchParams, useLocation, useNavigate } fr
 import { defineAppConfig, useAppData, useData, useConfig, history, KeepAliveOutlet, useMounted, ClientOnly, withSuspense, useSuspenseData, defineDataLoader, defineServerDataLoader, defineStaticDataLoader } from '@ice/runtime';
 import * as webModule1 from '@ice/runtime';
 import type { MetaType, TitleType, LinksType, ScriptsType, DataType, MainType} from '@ice/runtime';
-import { createStore, createModel } from '@ice/plugin-store/runtime';
 
 let Meta: MetaType;
 let Title: TitleType;
@@ -51,8 +50,6 @@ export {
   defineDataLoader,
   defineServerDataLoader,
   defineStaticDataLoader,
-  createStore,
-  createModel,
   Meta,
   Title,
   Links,

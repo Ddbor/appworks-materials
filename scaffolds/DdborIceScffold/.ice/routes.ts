@@ -1,6 +1,6 @@
 export default [
   {
-    path: '/',
+    path: '',
     load: () => import(/* webpackChunkName: "p_index" */ '@/pages/index'),
     componentName: 'index',
     index: true,

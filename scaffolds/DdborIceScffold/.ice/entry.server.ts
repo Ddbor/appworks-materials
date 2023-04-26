@@ -8,7 +8,7 @@ import type { RenderMode, DistType } from '@ice/runtime';
 import assetsManifest from 'virtual:assets-manifest.json';
 import routes from './routes';
 import routesConfig from './routes-config.bundle.mjs';
-import appStore from '@/store';
+
 const runtimeModules = { commons, statics };
 
 const getRouterBasename = () => {
@@ -75,8 +75,5 @@ function mergeOptions(options) {
     routesConfig,
     distType,
     serverData,
-    runtimeOptions: {
-      appStore,
-    },
   };
 }

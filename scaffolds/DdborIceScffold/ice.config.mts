@@ -1,5 +1,4 @@
 import { defineConfig } from '@ice/app';
-import store from '@ice/plugin-store';
 
 const minify = process.env.NODE_ENV === 'production' ? 'swc' : false;
 
@@ -87,12 +86,5 @@ export default defineConfig(() => ({
   eslint: false,
 
   // 添加插件
-  plugins: [
-    // 状态管理
-    store({
-      // 在单页应用下进行页面切换时，页面状态是会保留的。
-      // 如果想切换页面后再次进入原页面时重新初始化页面状态，需要添加以下配置
-      resetPageState: true,
-    }),
-  ],
+  plugins: [],
 }));

@@ -19,6 +19,6 @@
       "ice": [".ice"]
     }
   },
-  "include": ["src", ".ice", "src/store.ts", "src/models", "src/pages/models", "src/pages/store.ts"],
+  "include": ["src", ".ice", "src/store.ts", "src/models", "src/pages/models", "src/pages/models/store.ts"],
   "exclude": ["build"]
 }

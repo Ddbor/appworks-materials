@@ -1,6 +1,5 @@
 [
   {
-    "path": "/",
     "index": true,
     "id": "index",
     "file": "index.tsx",
